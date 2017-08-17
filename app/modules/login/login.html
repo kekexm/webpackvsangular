@@ -1,0 +1,30 @@
+
+<div class="container box login-box">
+	<alert to-log="$ctrl.getLog(_data)" static-data="$ctrl.staticDataA" static-data2="('static B!')"></alert>
+	<!-- to-log对应的是alert组件bindings里面的toLog，参数text 对应的是组件alert函数ctrl.toLog函数参数的对象属性 -->
+	<h4>输入的内容是：<span style="color:red;">{{$ctrl.text}}</span></h4>
+	<hr>
+	<div class="row">
+		<div class="col-sm-2 col-sm-offset-3">
+			{{$ctrl.accoutText}}
+		</div>
+		<div class="col-sm-6">
+			<input type="text" name="" ng-model="$ctrl.name">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 col-sm-offset-3">
+			{{$ctrl.passwordText}}：
+		</div>
+		<div class="col-sm-6">
+			<input type="password" name="" ng-model="$ctrl.password">
+		</div>
+	</div>
+	<br>
+	<h4 echartsdire obj="$ctrl.echartsOpts" style="height: 200px;width: 400px;">echarts Part</h4>有高度才能有echarts图显示
+	<div class="row">
+		<div class="col-sm-1 col-sm-offset-5">
+			<a href="javascript:;" ng-click="$ctrl.goState()">登录</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+
+<div class="container box content-box" ng-init="$ctrl.val=-1">
+	<div class="row">
+		<img src="../../static/img/4.jpg" alt="我是1张图片" class="img">
+	</div>	
+	<h3>下面红色边框里面是指令装饰DOM:</h3>
+	<h3 tip="content" no="$ctrl._text" obj="$ctrl._text" obj2="$ctrl.val"></h3>
+	<input tip="content" no="$ctrl._text" obj="$ctrl._text" obj2="$ctrl.val" ng-model="$ctrl.key"></input>
+	<button ng-click="$ctrl.changeNum()">查看值的变化</button>
+	<hr>
+	<tip no='how' obj="$ctrl.obj" other="$ctrl.todirective(addr)" obj2="$ctrl.val"></tip>
+	<br>
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			爱好：{{$ctrl.like}}
+		</div>
+		<div class="col-sm-6">
+			<h3></h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			讨厌：{{$ctrl.hate}}
+		</div>
+		<div class="col-sm-6">
+			<h3></h3>
+		</div>
+	</div>
+	<br>
+	
+	<ui-view></ui-view>
+	<div class="row">
+		<div class="col-sm-3">
+			<a ui-sref="app.content.det">详情template</a>
+		</div>
+		<div class="col-sm-3">
+			<a ui-sref="app.content.detail({key:1,name:'xiaoming',age:31})">详情ui-sref</a>
+		</div>
+		<div class="col-sm-3">
+			<a href="javascript:;" ng-click="$ctrl.godetail()">详情$state.go</a>
+		</div>
+		<div class="col-sm-3">
+			<a ui-sref="app.login">返回</a>
+		</div>
+	</div>
+</div>
+

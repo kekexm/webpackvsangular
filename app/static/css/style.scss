@@ -1,0 +1,13 @@
+$color-s : tomato;
+$border-6:6px;
+.s-scss {
+	background:$color-s;
+	color:white;
+	margin:10px auto;
+	max-width:700px;
+	padding:10px 0px;
+	border-radius:$border-6;
+}
+input{
+	padding:0px 12px;
+}

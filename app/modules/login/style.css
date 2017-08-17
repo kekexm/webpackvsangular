@@ -1,0 +1,14 @@
+.login-box .row{
+	margin: 10px 0px;
+}
+.login-box .row input{
+	height: 36px;
+}
+.login-box .row a{
+	display: block;
+	width: 80px;
+	height: 40px;
+	background: #ccc;
+	padding: 0px;
+	line-height: 40px;
+}

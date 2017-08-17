@@ -1,0 +1,16 @@
+.content-box .row{
+	margin: 10px 0px;
+}
+.content-box .row a{
+	display: block;
+	width: 120px;
+	height: 40px;
+	background: #ccc;
+	padding: 0px;
+	line-height: 40px;
+}
+.content-box .row img.img{
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+}
