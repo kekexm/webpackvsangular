@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>webpack + angular 1.x</title>
+</head>
+<body>
+	<!-- 这种方式也可以，但是修改本html文件页面不会自动刷新，所以，只把本页面里面写<ui-view></ui-view>，本身也当做一个总路由。 -->
+	<div class="s-less-box jq-plugin"></div>
+	<div class="header">
+		<h3>利用webpack打包angular1.x</h3>
+		<h4 class="s-scss">我引入的是scss样式文件</h5>
+		<h4 class="s-less">我引入的是less样式文件</h4>
+	</div>
+	<div class="container con-box">
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-3">
+				<a ui-sref="left" ui-sref-active="active">left</a>
+			</div>
+			<div class="col-sm-2 col-sm-offset-2">
+				<a ui-sref="right" ui-sref-active="active">right</a>
+			</div>
+		</div>
+		<ui-view></ui-view>
+	</div>
+	<div class="footer">
+		<h5>footer</h5>
+	</div>
+</body>
+</html>
